@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">RSS Reader</string>
+    <string name="app_name_with_version">RSS Reader 1.0.0</string>
+
+    <!-- NavigationView menu items -->
+    <string name="home">Home</string>
+    <string name="favourites">Favourites</string>
+    <string name="help">Help</string>
+    <string name="settings">Settings</string>
+
+    <string name="loading">Loading…</string>
+
+    <!-- Help-related AlertDialogs -->
+    <string name="hd_feed_title">Feed view</string>
+    <string name="hd_feed_desc">Tap on a headline to bring up the article view, which shows more detail regarding the article; photo, brief description, link, and favourite button.\n\n
+        The menu button, located at the left of the toolbar, can be used to navigate to "Favourites" (a list of your favourite articles) or to the settings (to change the RSS feed URL)</string>
+    <string name="hd_favourites_title">Favourites view</string>
+    <string name="hd_favourites_desc">This view functions similarly to the feed, but is populated with local copies of the articles you\'ve favourited.\n\n
+        Tap on a headline to bring up the article view, which shows more detail regarding the article; photo, brief description, link, and favourite button.</string>
+    <string name="hd_detail_title">Article view</string>
+    <string name="hd_detail_desc">The article\'s photo, title, description, and link are displayed.\n\n
+        Tapping on the link will open the article in your default web browser.\n\n
+        The (un)favourite button can be used to add or remove an article from your favourites list.</string>
+    <string name="hd_settings_title">Settings</string>
+    <string name="hd_settings_desc">Here you can change the RSS feed\'s URL, so that you can load your news from a different source.\n\n
+        SET will store whatever is in the text box as the URL to load as a feed. It will also give you a brief period to revert the change via a Snackbar.\n\n
+        CLEAR will remove whatever text is currently in the text box.\n\n
+        If you want to revert to the default BBC News feed, ensure the text box is empty and hit SET.</string>
+
+    <!-- DetailFragment's Favourite button -->
+    <string name="favourite">Favourite</string>
+    <string name="unfavourite">Unfavourite</string>
+
+    <!-- Settings fragment -->
+    <string name="url_info">URL to use for RSS feed</string>
+    <string name="set">Set</string>
+    <string name="clear">Clear</string>
+
+    <string name="set_snackbar">URL set.</string>
+    <string name="undo">Undo</string>
+
+    <string name="info_empty_feed">No items to display.</string>
+    <string name="info_empty_feed_description">Try entering a different RSS URL in the settings.</string>
+
+    <!-- Error messages -->
+    <string name="error_XmlPullParser">Provided feed URL may have invalid formatting!</string>
+    <string name="error_UnknownHost">Provided feed URL doesn\'t exist!</string>
+    <string name="error_UnknownHost_NoInternet">Are you connected to the internet?</string>
+    <string name="error_MalformedURL">Provided feed URL is invalid; does it start with "http://" or "https://"?</string>
+    <string name="error_SSLHandshake">Is your date and time set correctly?</string>
+    <string name="error_SocketTimeout">Couldn\'t connect to RSS feed; check feed URL and/or your internet connection.</string>
+    <!-- Not very user-friendly, but I haven't ran into an IOException nor any other exceptions in my testing. -->
+    <string name="error_general">See Logcat for details.</string>
+    <string name="error_toast_base">An error occurred: %s</string>
+</resources>

@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Lecteur RSS</string>
+    <string name="app_name_with_version">Lecteur RSS 1.0.0</string>
+
+    <!-- NavigationView menu items -->
+    <string name="home">Accueil</string>
+    <string name="favourites">Favoris</string>
+    <string name="help">Aide</string>
+    <string name="settings">Paramètres</string>
+
+    <string name="loading">Chargement…</string>
+
+    <!-- Help-related AlertDialogs -->
+    <string name="hd_feed_title">Vue du fil</string>
+    <string name="hd_feed_desc">Tapez sur un titre pour afficher la vue de l\'article, qui montre plus de détails concernant l\'article; photo, brève description, lien et bouton favori.\n\nLe bouton de menu, situé à gauche de la barre d\'outils, peut être utilisé pour naviguer vers les "Favoris" (une liste de vos articles préférés) ou vers les paramètres (pour changer l\'URL du flux RSS)</string>
+    <string name="hd_favourites_title">Vue des favoris</string>
+    <string name="hd_favourites_desc">Cette vue fonctionne de la même manière que la vue de l\'article, mais elle est remplie de copies locales des articles que vous avez ajoutés à vos favoris.\n\nTapez sur un titre pour afficher la vue de l\'article, qui montre plus de détails concernant l\'article; photo, brève description, lien et bouton favori.</string>
+    <string name="hd_detail_title">Vue de l\'article</string>
+    <string name="hd_detail_desc">Contenu de l\'article — photo, titre, description et lien — sont affichés.\n\nTaper sur le lien ouvrira l\'article dans votre navigateur web par défaut.\n\nLe bouton (retirer des) favori(s) peut être utilisé pour ajouter ou retirer un article de votre liste de favoris.</string>
+    <string name="hd_settings_title">Paramètres</string>
+    <string name="hd_settings_desc">Ici, vous pouvez modifier l\'URL du flux RSS afin de charger vos nouvelles à partir d\'une autre source.\n\n« DÉFINIR » enregistrera le contenu de la zone de texte comme URL à charger en tant que flux. Il vous donnera également une brève période pour annuler le changement via un Snackbar.\n\n« EFFACER » supprimera tout texte se trouvant actuellement dans la zone de texte.\n\nSi vous voulez revenir au fil de nouvelles par défaut de BBC News, assurez-vous que la zone de texte est vide et tapez sur « DÉFINIR ».</string>
+
+    <!-- DetailFragment's Favourite button -->
+    <string name="favourite">Favori</string>
+    <string name="unfavourite">Retirer des favoris</string>
+
+    <!-- Settings fragment -->
+    <string name="url_info">URL à utiliser pour le fil RSS</string>
+    <string name="set">DÉFINIR</string>
+    <string name="clear">Effacer</string>
+
+    <string name="set_snackbar">URL définie.</string>
+    <string name="undo">Annuler</string>
+
+    <string name="info_empty_feed">Aucun contenu à afficher.</string>
+    <string name="info_empty_feed_description">Veuillez essayer d\'entrer une URL RSS différente dans les paramètres.</string>
+
+    <!-- Error messages -->
+    <string name="error_XmlPullParser">L\'URL de flux fournie pourrait avoir un format invalide!</string>
+    <string name="error_UnknownHost">L\'URL de flux fournie n\'existe pas!</string>
+    <string name="error_UnknownHost_NoInternet">Es-tu connecté à l\'internet?</string>
+    <string name="error_MalformedURL">L\'URL de flux fournie est invalide; commence-t-elle par « http:// » ou « https:// »?</string>
+    <string name="error_SSLHandshake">Votre date et votre heure sont-elles réglées correctement?</string>
+    <string name="error_SocketTimeout">Impossible de se connecter au fil RSS; vérifiez l\'URL du fil et/ou votre connexion Internet.</string>
+    <!-- Not very user-friendly, but I haven't ran into an IOException nor any other exceptions in my testing. -->
+    <string name="error_general">Voir Logcat pour plus de détails.</string>
+    <string name="error_toast_base">Une erreur est survenue: %s</string>
+</resources>

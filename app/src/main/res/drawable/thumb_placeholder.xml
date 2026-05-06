@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- startColor = gray 200 (Material 2) -->
+    <!-- endColor = gray 600 (Material 2) -->
+    <gradient
+        android:angle="135"
+        android:startColor="#EEEEEE"
+        android:endColor="#757575"
+        android:type="linear"/>
+</shape>

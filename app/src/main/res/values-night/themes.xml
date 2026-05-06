@@ -1,0 +1,11 @@
+<resources>
+    <!-- Base application theme. -->
+    <!-- TODO: Look into what a dark theme entails over a light/standard theme. Currently just copying over from standard theme. -->
+    <style name="Base.Theme.RSSReader" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="android:statusBarColor">@color/my_light_primary</item>
+        <item name="colorPrimary">@color/my_light_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+</resources>

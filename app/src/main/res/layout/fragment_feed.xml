@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.basic.feed.FeedFragment">
+
+   <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+       android:id="@+id/refresh_layout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+      <!-- Visibility toggled once loading has finished -->
+      <ListView
+          android:visibility="gone"
+          android:id="@+id/feed_list"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          tools:listitem="@layout/item_basic" />
+   </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+   <!-- Hidden once loading has finished. -->
+   <TextView
+       android:id="@+id/loading_or_exception"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintBottom_toTopOf="@id/progress_bar"
+       android:text="@string/loading" />
+   <ProgressBar
+       android:id="@+id/progress_bar"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintWidth_percent="0.5"
+       style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+
+   <!-- Visibility toggled if an error occurs -->
+   <TextView
+       android:visibility="gone"
+       android:id="@+id/error_message"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/loading_or_exception"
+       app:layout_constraintWidth_percent="0.8"
+       android:gravity="center"
+       android:maxLines="4"
+       android:ellipsize="end"
+       tools:text="@tools:sample/lorem/random" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
