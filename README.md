@@ -1,7 +1,7 @@
 # RSS Reader
 A barebones RSS reader for Android, written as my final assignment for Algonquin College's "Mobile Graphical Interface Programming" course (CST2335)
 
-**TODO: Add screenshot**
+<img width="4380" height="1920" alt="A collage of screenshots showcasing different UI views: feed, article, favourites, and an error screen." src="https://github.com/user-attachments/assets/b14b0a44-8732-469c-bda8-6e868685a73b" />
 
 For this assignment we were to pick from three topics: 
 * A viewer for NASA's image of the day
